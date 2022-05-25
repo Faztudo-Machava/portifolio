@@ -14,7 +14,7 @@
 }
 
 body {
-    @apply bg-gradient-to-bl from-principle-300 to-purple-500 text-brand-300 px-[2.1rem] pt-[1.5rem] tracking-wider h-[100vh];
+    @apply bg-gradient-to-bl from-principle-300 to-purple-500 bg-no-repeat text-brand-300 px-[2.1rem] pt-[1.5rem] tracking-wider h-[100vh] font-textMeOne overflow-hidden;
 }
 
 h1, h2, h3, h4, h5, h6{

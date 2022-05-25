@@ -7,7 +7,7 @@ export function Home(){
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            className='h-[80vh] flex flex-col justify-center items-center'
+            className='flex flex-col justify-center items-center h-[80vh]'
         >
             <h1 className='text-xl text-[50px]'>
                 Fausto Machava
@@ -23,7 +23,7 @@ export function Home(){
                     />
                 </span> */}
             </h1>
-            <p className='mt-4 text-lg font-textMeOne'>
+            <p className='mt-4 text-base font-textMeOne'>
             <span>
                     <Typewriter
                         words={['Sou Engenheiro de Software']}

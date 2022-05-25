@@ -4,40 +4,59 @@ import { Contact } from '../pages/Contact'
 import { Home } from '../pages/Home'
 import { Projects } from '../pages/Projects'
 import { AnimatePresence } from 'framer-motion';
+import { Back } from './BackBtn'
+import { Foward } from './FowardBtn'
 
 
 export function RoutesComp() {
     const route = {
         Home:{
             path: '/',
-            component: <Home />
+            component: <Home />,
+            next: 'About',
+            prev: '',
         },
         About:{
-            path: 'about',
-            component: <About />
+            path: 'About',
+            component: <About />,
+            next: 'Projects',
+            prev: 'About',
         },
         Projects: {
-            path: 'projects',
-            component: <Projects />
+            path: 'Projects',
+            component: <Projects />,
+            next: 'Contact',
+            prev: 'Projects',
         },
         Contact: {
-            path: 'contact',
-            component: <Contact />
+            path: 'Contact',
+            component: <Contact />,
+            next: '',
+            prev: 'Projects',
         }
     }
     const location = useLocation();
+    let next = '';
+    let prev = '';
+    
 
     return(
-        <AnimatePresence>
-            <Routes location={location} key={location.pathname}>
-                {Object.entries(route).map(([key , item])=>{
-                    return(
-                        <>
-                            <Route path={item.path} element={item.component} />
-                        </>
-                    )
-                })}
-            </Routes>
-        </AnimatePresence>
+        <>
+            <AnimatePresence>
+                <Routes location={location} key={location.pathname}>
+                    {Object.entries(route).map(([key , item])=>{
+                        if(item.path == location.pathname){
+                            next = item.next;
+                            prev = item.prev;
+                        }
+                        return(
+                            <Route key={key} path={item.path} element={item.component} />
+                        )
+                    })}
+                </Routes>
+            </AnimatePresence>
+            {prev == '' ? '' :   <Back path={prev} pathName={location.pathname == '/' ? 'Home' : location.pathname}/>}
+            {next == '' ? '' :   <Foward path={next} pathName={location.pathname}/>}
+        </>
     )
 }
