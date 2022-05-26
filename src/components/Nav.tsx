@@ -25,7 +25,7 @@ export function Nav() {
     return (
         <>
             <div className='flex flex-row justify-center'>
-                <div className="px-4 py-2 flex flex-row bg-[#ffffff3b] bg-opacity-[26] rounded-lg">
+                <div className="px-4 py-2 flex flex-row bg-zinc-700 bg-opacity-50 rounded-lg">
                     {Object.entries(routes).map(([key, item]) => {
                         return (
                             <NavLink
@@ -33,7 +33,7 @@ export function Nav() {
                                 to={item.path}
                                 className={
                                     ({ isActive }) =>
-                                        isActive ? 'text-action-300' : 'text-brand-300 hover:text-action-300 hover:transition-colors hover:duration-300'
+                                        isActive ? 'text-principle-300' : 'text-zinc-200 hover:text-principle-300 hover:transition-colors hover:duration-300'
                                 }
                             >
                                 {item.icon}

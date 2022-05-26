@@ -2,6 +2,9 @@ module.exports = {
     content: ["./src/**/*.tsx"],
     theme: {
         extend: {
+            screens: {
+                'xs': '150px'
+            },
             colors: {
                 principle: {
                     300: '#005DFE'
@@ -16,8 +19,33 @@ module.exports = {
             },
             fontFamily: {
                 textMeOne: ['"textmeone"'],
-                lobster: ['"lobster"']
+                lobster: ['"lobster"'],
+                montserrat: ['"montserrat"']
             },
+            animation: {
+                zoom: 'zoom 1.5s ease-out infinite',
+                hover: 'hover 1.5s ease-in-out',
+                'direction-right': 'direction-right 3s ease-in-out infinite',
+                'direction-left': 'direction-left 3s ease-in-out infinite',
+            },
+            keyframes: {
+                zoom: {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.3)' }
+                },
+                hover: {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.1)' }
+                },
+                'direction-right': {
+                    '0%, 100%': { transform: 'translateX(-50%)' },
+                    '50%': { transform: 'translateX(0.4px)' }
+                },
+                'direction-left': {
+                    '0%, 100%': { transform: 'translateX(50%)' },
+                    '50%': { transform: 'translateX(-0.4px)' }
+                }
+            }
         },
     },
     plugins: [],

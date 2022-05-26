@@ -20,7 +20,7 @@ export function RoutesComp() {
             path: 'About',
             component: <About />,
             next: 'Projects',
-            prev: 'About',
+            prev: 'Home',
         },
         Projects: {
             path: 'Projects',
@@ -55,8 +55,6 @@ export function RoutesComp() {
                     })}
                 </Routes>
             </AnimatePresence>
-            {prev == '' ? '' :   <Back path={prev} pathName={location.pathname == '/' ? 'Home' : location.pathname}/>}
-            {next == '' ? '' :   <Foward path={next} pathName={location.pathname}/>}
         </>
     )
 }

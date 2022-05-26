@@ -4,19 +4,32 @@
 @layer base{
     @font-face {
         font-family: "lobster";
-        src: url("/fonts/Lobster-Regular.ttf");
+        src: url("./fonts/Lobster-Regular.ttf");
     }
     
     @font-face {
         font-family: "textmeone";
-        src: url("/fonts/TextMeOne-Regular.ttf");
+        src: url("./fonts/TextMeOne-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "montserrat";
+        src: url("./fonts/Montserrat-Medium.ttf");
     }
 }
 
+*{
+    @apply cursor-none;
+}
+
 body {
-    @apply bg-gradient-to-bl from-principle-300 to-purple-500 bg-no-repeat text-brand-300 px-[2.1rem] pt-[1.5rem] tracking-wider h-[100vh] font-textMeOne overflow-hidden;
+    @apply bg-zinc-800 bg-no-repeat text-zinc-200 px-[2.1rem] pt-[1.5rem] tracking-wider h-[100vh] font-montserrat overflow-hidden text-sm;
 }
 
 h1, h2, h3, h4, h5, h6{
     @apply font-lobster;
+}
+
+button{
+    @apply cursor-none;
 }
