@@ -10,14 +10,14 @@ export function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='flex flex-col justify-center items-center h-[80vh]'
+            className='flex flex-col justify-center items-center h-[80vh] max-w-full'
         >
             <p>Oi, chamo-me</p>
-            <h1 className='text-xl text-[50px] mt-4'>
+            <h1 className='text-3xl md:text-4xl 2xl:text-8xl mt-4 2xl:mt-10 whitespace-nowrap'>
                 Fausto Machava
             </h1>
-            <p className='my-4 text-base'>
-                <span>
+            <p className='my-4 2xl:my-10'>
+                <span className='whitespace-nowrap'>
                     <Typewriter
                         words={['Engenheiro de Software']}
                         loop={1}
@@ -29,10 +29,10 @@ export function Home() {
                     />
                 </span>
             </p>
-            <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row justify-center gap-3">
                 <DownloadCV />
                 <button
-                    className='bg-principle-300 px-6 py-2 rounded hover:bg-blue-800 hover:duration-200 hover:transition-all flex'
+                    className='bg-principle-300 hover:bg-blue-800 btn-section'
                 >Contacte {<PaperPlaneTilt className='ml-2' size={20} weight='fill'/>} </button>
             </div>
             <Foward path='/About' pathName='About' />

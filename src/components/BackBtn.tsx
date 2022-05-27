@@ -8,9 +8,9 @@ interface fowardProps {
 
 export function Back({path, pathName}: fowardProps){
     return(
-        <Link to={path} className='absolute top-[50%] translate-y-[-50%] left-3 flex flex-row-reverse items-center duration-200 animate-direction-left'>
+        <Link to={path} className='left-3 direction-btn flex-row-reverse animate-direction-left'>
             <p className='text-center ml-2'>{pathName}</p>
-            <Triangle weight='fill' size={50} className='rotate-[-90deg] text-principle-300'/>
+            <Triangle weight='fill' className='rotate-[-90deg] text-principle-300 w-10 h-10 2xl:w-28 2xl:h-28'/>
         </Link>
     );
 }

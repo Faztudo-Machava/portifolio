@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Cursor classes='sm:d-none'/>
+      <Cursor classes='hidden md:flex'/>
       <RoutesComp />
       <Footer />
     </>

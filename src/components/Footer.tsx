@@ -3,48 +3,48 @@ import { EnvelopeSimpleOpen, FacebookLogo, GithubLogo, InstagramLogo, LinkedinLo
 
 export function Footer() {
     return (
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center gap-1 md:gap-3 2xl:gap-7 pb-4 absolute left-[50%] translate-x-[-50%]">
             <a
                 href="#"
                 target={"_blank"}
-                className='hover:text-principle-300 hover:transition-colors hover:duration-300'
+                className='footer-link'
             >
-                <FacebookLogo size={32} weight='light'/>
+                <FacebookLogo size={32} weight='light' />
             </a>
             <a
                 href="#"
-                className="ml-4 hover:text-principle-300 hover:transition-colors hover:duration-300"
+                className="footer-link"
                 target={"_blank"}
             >
-                <WhatsappLogo size={32} weight='light'/>
+                <WhatsappLogo size={32} weight='light' />
             </a>
             <a
                 href="#"
-                className="ml-4 hover:text-principle-300 hover:transition-colors hover:duration-300"
+                className="footer-link"
                 target={"_blank"}
             >
-                <InstagramLogo size={32} weight='light'/>
+                <InstagramLogo size={32} weight='light' />
             </a>
             <a
                 href="https://linkedin.com/in/faztudo-machava"
                 target={"_blank"}
-                className="ml-4 hover:text-principle-300 hover:transition-colors hover:duration-300"
+                className="footer-link"
             >
-                <LinkedinLogo size={32} weight='light'/>
+                <LinkedinLogo size={32} weight='light' />
             </a>
             <a
                 href="https://github.com/Faztudo-Machava"
                 target={"_blank"}
-                className="ml-4 hover:text-principle-300 hover:transition-colors hover:duration-300"
+                className="footer-link"
             >
-                <GithubLogo size={32} weight='light'/>
+                <GithubLogo size={32} weight='light' />
             </a>
             <a
                 href="mailto:fasthymachava12@gmail.com"
                 target={"_blank"}
-                className="ml-4 hover:text-principle-300 hover:transition-colors hover:duration-300"
+                className="footer-link"
             >
-                <EnvelopeSimpleOpen size={32} weight='light'/>
+                <EnvelopeSimpleOpen size={32} weight='light' />
             </a>
         </div>
     )

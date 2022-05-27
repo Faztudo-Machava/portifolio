@@ -67,7 +67,7 @@ const skills = {
 
 export function Skills() {
     return (
-        <div className="grid grid-cols-6 gap-4 px-8 py-3">
+        <div className="grid grid-cols-2 gap-2 mt-4 md:grid-cols-4 sm:grid-cols-3 lg:grid-cols-6">
             {Object.entries(skills).map(([key, item])=>{
                 return(
                     <div key={key} className="flex flex-col bg-zinc-700 bg-opacity-50 rounded justify-center items-center py-4 hover:animate-hover">

@@ -23,7 +23,19 @@
 }
 
 body {
-    @apply bg-zinc-800 bg-no-repeat text-zinc-200 px-[2.1rem] pt-[1.5rem] tracking-wider h-[100vh] font-montserrat overflow-hidden text-sm;
+    @apply 
+        bg-zinc-800 
+        bg-no-repeat 
+        text-zinc-200 
+        px-[2.1rem] pt-[1.5rem] 
+        tracking-wider 
+        h-screen 
+        font-montserrat 
+        overflow-x-hidden 
+        text-xs
+        sm:text-sm
+        md:text-sm
+        2xl:text-4xl;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -32,4 +44,25 @@ h1, h2, h3, h4, h5, h6{
 
 button{
     @apply cursor-none;
+}
+
+.btn-section{
+    @apply 
+        px-6 
+        py-2 
+        rounded 
+        hover:duration-200 
+        hover:transition-all 
+        flex justify-center 
+        items-center
+        2xl:px-14
+        2xl:py-10;
+}
+
+.footer-link{
+    @apply hover:text-principle-300 hover:transition-colors hover:duration-300;
+}
+
+.direction-btn{
+    @apply absolute top-[50%] translate-y-[-50%] md:flex flex-col items-center justify-center hidden;
 }
