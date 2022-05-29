@@ -20,7 +20,8 @@ module.exports = {
             fontFamily: {
                 textMeOne: ['"textmeone"'],
                 lobster: ['"lobster"'],
-                montserrat: ['"montserrat"']
+                montserrat: ['"montserrat"'],
+                josefinSans: ['"josefinSans"']
             },
             animation: {
                 zoom: 'zoom 1.5s ease-out infinite',

@@ -21,14 +21,15 @@ export function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                     <div className="flex items-center">
                         <p className="py-4 text-justify">
-                            Eu chamo Fausto Machava, tenho {age} sou Mocambicano, vivo na pronvincia de Maputo em Mocambique, no bairro de Magoanine-B
-                            avenidade Coronel Sebastiao Marcos Mabote
+                        Eu sou um jovem de {age} anos de idade apaixonado pela área de desenvolvimento de sistemas, 
+                        meu maior foco é o desenvolvimento front-end com mais engajamento nas ferramentas React JS, 
+                        Tailwind CSS e Bootstrap. Já tive contacto com várias tecnologias pois minha curiosidade e vontade de aprender é muito grande.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2">
                         <div className="flex flex-col bg-zinc-700 bg-opacity-50 rounded justify-center items-center py-4 hover:animate-hover text-green-500">
                             <Trophy size={32} />
-                            <p className='text-sm my-2'>Experiencia</p>
+                            <p className='text-sm my-2'>Experiência</p>
                             <p>2+</p>
                         </div>
                         <div className="flex flex-col bg-zinc-700 bg-opacity-50 rounded justify-center items-center py-4 hover:animate-hover text-green-500">

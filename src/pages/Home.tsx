@@ -12,7 +12,7 @@ export function Home() {
             exit={{ opacity: 0 }}
             className='flex flex-col justify-center items-center h-[90vh] max-w-full'
         >
-            <p>Oi, chamo-me</p>
+            <p>Oi, meu nome é</p>
             <h1 className='text-3xl md:text-4xl 2xl:text-8xl mt-4 2xl:mt-10 whitespace-nowrap'>
                 Fausto Machava
             </h1>
