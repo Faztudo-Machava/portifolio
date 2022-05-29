@@ -46,6 +46,10 @@ button{
     @apply cursor-none;
 }
 
+a{
+    @apply cursor-pointer !important;
+}
+
 .btn-section{
     @apply 
         px-6 
@@ -65,4 +69,16 @@ button{
 
 .direction-btn{
     @apply absolute top-[50%] translate-y-[-50%] md:flex flex-col items-center justify-center hidden;
+}
+
+body::-webkit-scrollbar {
+    @apply w-[14px] h-[14px]
+  }
+
+body::-webkit-scrollbar-track {
+    @apply rounded-xl bg-zinc-300;
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-blue-500 rounded-xl hover:bg-blue-700 transition-all;
 }

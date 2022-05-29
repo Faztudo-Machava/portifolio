@@ -4,8 +4,6 @@ import { Contact } from '../pages/Contact'
 import { Home } from '../pages/Home'
 import { Projects } from '../pages/Projects'
 import { AnimatePresence } from 'framer-motion';
-import { Back } from './BackBtn'
-import { Foward } from './FowardBtn'
 
 
 export function RoutesComp() {

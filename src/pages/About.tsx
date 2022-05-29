@@ -15,7 +15,7 @@ export function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='flex flex-col justify-center items-center px-10 md:px-28 lg:h-[80vh]'
+            className='flex flex-col justify-center items-center px-10 md:px-28 lg:h-[90vh]'
         >
             <div className="my-6 flex flex-col gap-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">

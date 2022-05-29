@@ -10,7 +10,7 @@ export function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='flex flex-col justify-center items-center h-[80vh] max-w-full'
+            className='flex flex-col justify-center items-center h-[90vh] max-w-full'
         >
             <p>Oi, chamo-me</p>
             <h1 className='text-3xl md:text-4xl 2xl:text-8xl mt-4 2xl:mt-10 whitespace-nowrap'>
@@ -31,9 +31,10 @@ export function Home() {
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-3">
                 <DownloadCV />
-                <button
+                <a href='mailto:fasthymachava12@gmail.com'
+                    target={'_blank'}
                     className='bg-principle-300 hover:bg-blue-800 btn-section'
-                >Contacte {<PaperPlaneTilt className='ml-2' size={20} weight='fill'/>} </button>
+                >Contacte {<PaperPlaneTilt className='ml-2' size={20} weight='fill'/>} </a>
             </div>
             <Foward path='/About' pathName='About' />
         </motion.div>

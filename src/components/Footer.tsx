@@ -3,7 +3,7 @@ import { EnvelopeSimpleOpen, FacebookLogo, GithubLogo, InstagramLogo, LinkedinLo
 
 export function Footer() {
     return (
-        <div className="flex flex-row justify-center gap-1 md:gap-3 2xl:gap-7 pb-4 absolute left-[50%] translate-x-[-50%]">
+        <div className="flex flex-row justify-center gap-1 md:gap-3 2xl:gap-7 pb-2">
             <a
                 href="#"
                 target={"_blank"}

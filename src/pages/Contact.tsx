@@ -8,7 +8,7 @@ export function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className='flex flex-col justify-center items-center h-[80vh]'
+      className='flex flex-col justify-center items-center h-[90vh]'
     >
       <h1>Contact</h1>
       <Back path='/Projects' pathName='Projects' />

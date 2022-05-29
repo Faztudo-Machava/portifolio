@@ -10,22 +10,22 @@ export function Nav() {
         },
         ABOUT: {
             path: 'About',
-            icon: <User className='ml-2' size={32} weight='fill' />
+            icon: <User size={32} weight='fill' />
         },
         PROJECTS: {
             path: 'Projects',
-            icon: <List className='ml-2' size={32} weight='fill' />
+            icon: <List size={32} weight='fill' />
         },
         CONTACT: {
             path: 'Contact',
-            icon: <PaperPlaneTilt className='ml-2' size={32} weight='fill' />
+            icon: <PaperPlaneTilt size={32} weight='fill' />
         }
     }
 
     return (
         <>
-            <div className='flex flex-row justify-center'>
-                <div className="px-4 py-2 flex flex-row bg-zinc-700 bg-opacity-50 rounded-lg">
+            <div className='flex flex-row justify-center fixed left-[50%] translate-x-[-50%] top-[1vh]'>
+                <div className="px-4 py-2 flex flex-row bg-zinc-700 bg-opacity-50 rounded-lg gap-3 shadow-xl shadow-zinc-900">
                     {Object.entries(routes).map(([key, item]) => {
                         return (
                             <NavLink
