@@ -23,10 +23,6 @@
     }
 }
 
-*{
-    @apply cursor-none;
-}
-
 body {
     @apply 
         bg-zinc-800 
@@ -37,22 +33,13 @@ body {
         h-screen 
         font-josefinSans
         overflow-x-hidden 
-        text-base
-        sm:text-sm
-        md:text-sm
+        text-sm
+        md:text-base
         2xl:text-4xl;
 }
 
 h1, h2, h3, h4, h5, h6{
     @apply font-lobster;
-}
-
-button{
-    @apply cursor-none;
-}
-
-a{
-    @apply cursor-pointer !important;
 }
 
 .btn-section{

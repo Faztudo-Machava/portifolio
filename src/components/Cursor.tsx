@@ -32,7 +32,7 @@ export function Cursor({classes}: CursorProps) {
 
     return (
         <div
-            style={{ position: "absolute", top: `${y}px`, left: `${x}px` }}
+            style={{ position: "fixed", top: `${y}px`, left: `${x}px` }}
             className={`h-10 w-10 rounded-full bg-transparent border-4 opacity-50 translate-x-[-50%] translate-y-[-50%] z-[-1] flex justify-center items-center ${classes}`}
         >
             <Circle size={20} className='animate-zoom'/>

@@ -2,10 +2,16 @@ import { Footer } from './components/Footer';
 import { Nav } from './components/Nav'
 import { RoutesComp } from './components/Routes';
 import { Cursor } from './components/Cursor';
+import { useKey } from './components/keyPressed';
 
 
 
 function App() {
+  function handle(){
+    alert(`arrow clicked`);
+  }
+
+  useKey("ShiftRight", handle);
 
   return (
     <>

@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
-import { PaperPlaneTilt } from 'phosphor-react';
+import { Envelope, PaperPlaneTilt } from 'phosphor-react';
 import { Typewriter } from 'react-simple-typewriter'
 import { DownloadCV } from '../components/DownloadBtn';
 import { Foward } from '../components/FowardBtn';
+import { useKey } from '../components/keyPressed';
 
 export function Home() {
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -34,7 +36,7 @@ export function Home() {
                 <a href='mailto:fasthymachava12@gmail.com'
                     target={'_blank'}
                     className='bg-principle-300 hover:bg-blue-800 btn-section'
-                >Contacte {<PaperPlaneTilt className='ml-2' size={20} weight='fill'/>} </a>
+                >Contacte {<Envelope className='ml-2' size={20} weight='fill'/>} </a>
             </div>
             <Foward path='/About' pathName='About' />
         </motion.div>

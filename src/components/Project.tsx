@@ -8,7 +8,7 @@ interface ProjectProps {
 
 export function Project({ repository, link, img, name }: ProjectProps) {
     return (
-        <div className="flex flex-col bg-principle-300 rounded shadow-lg shadow-zinc-900 hover:animate-hover">
+        <div className="flex flex-col bg-principle-300 rounded shadow-lg shadow-zinc-900">
             <div>
                 <img className="object-cover" src={img} alt={`imagem do ${name}`} />
             </div>
