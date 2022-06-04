@@ -40,7 +40,7 @@ export function Projects() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className='flex flex-col justify-center items-center md:px-28 sm:px-16'
+      className='flex flex-col justify-center items-center md:px-28 sm:px-16 mt-4 lg:min-h-[87vh]'
     >
       <div className='my-4 flex flex-col justify-center'>
         <h1 className='text-lg text-center my-4 '>Projectos</h1>

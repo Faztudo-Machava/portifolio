@@ -25,7 +25,7 @@ export function Nav() {
     return (
         <>
             <div className='flex flex-row justify-center fixed left-[50%] translate-x-[-50%] top-[1vh]'>
-                <div className="px-4 py-2 flex flex-row bg-zinc-700 bg-opacity-50 rounded-lg gap-3 shadow shadow-zinc-900">
+                <div className="px-4 py-2 flex flex-row bg-zinc-700 bg-opacity-50 rounded-lg gap-3 shadow-xl shadow-zinc-900">
                     {Object.entries(routes).map(([key, item]) => {
                         return (
                             <NavLink

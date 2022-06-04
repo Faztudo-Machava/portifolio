@@ -11,7 +11,7 @@ function App() {
     alert(`arrow clicked`);
   }
 
-  useKey("ShiftRight", handle);
+  useKey("ArrowRight", handle);
 
   return (
     <>

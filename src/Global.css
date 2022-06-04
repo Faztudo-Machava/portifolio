@@ -25,9 +25,9 @@
 
 body {
     @apply 
-        bg-zinc-800 
+        bg-gray-900 
         bg-no-repeat 
-        text-zinc-200 
+        text-slate-200 
         px-[2.1rem] pt-[1.5rem] 
         tracking-wider 
         h-screen 
@@ -45,14 +45,14 @@ h1, h2, h3, h4, h5, h6{
 .btn-section{
     @apply 
         px-6 
-        py-2 
-        rounded 
+        py-2  
         hover:duration-200 
         hover:transition-all 
         flex justify-center 
         items-center
         2xl:px-14
-        2xl:py-10;
+        2xl:py-10
+        rounded-md;
 }
 
 .footer-link{

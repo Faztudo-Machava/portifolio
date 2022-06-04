@@ -70,7 +70,7 @@ export function Skills() {
         <div className="grid grid-cols-2 gap-2 mt-4 md:grid-cols-4 sm:grid-cols-3 lg:grid-cols-6">
             {Object.entries(skills).map(([key, item])=>{
                 return(
-                    <div key={key} className="flex flex-col bg-zinc-700 bg-opacity-50 rounded justify-center items-center py-4 hover:animate-hover">
+                    <div key={key} className="flex flex-col bg-gray-700 bg-opacity-50 rounded justify-center items-center py-4 hover:animate-hover">
                         <img src={item.icon} alt={item.name} className="h-10 w-10" />
                         <p className='text-sm mt-2'>{item.name}</p>
                     </div>

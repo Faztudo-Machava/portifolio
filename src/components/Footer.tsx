@@ -12,14 +12,14 @@ export function Footer() {
                 <FacebookLogo size={32} weight='light' />
             </a>
             <a
-                href=""
+                href="https://m.me/fasthy.machava"
                 target={"_blank"}
                 className="footer-link"
             >
                 <MessengerLogo size={32} weight='light' />
             </a>
             <a
-                href=""
+                href="https://wa.me/258848709975"
                 className="footer-link"
                 target={"_blank"}
             >
