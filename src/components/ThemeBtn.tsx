@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export function ThemeBtn(){
 
-    const [theme, setTheme] = useState<string>('light');
+    const [theme, setTheme] = useState<string>('dark');
     const colorTheme : string = theme === 'dark' ? 'light' : 'dark'; 
     useEffect(()=>{
         const root = window.document.documentElement;
@@ -15,7 +15,7 @@ export function ThemeBtn(){
     return(
         <div className="fixed top-4 right-4">
             <span className="cursor-pointer" onClick={() => setTheme(colorTheme)}>
-                {theme === 'dark' ? <Lightbulb size={24} /> : <Moon size={24}/> }
+                {theme === 'dark' ? <Lightbulb size={28} /> : <Moon size={28}/> }
             </span>
         </div>
     )

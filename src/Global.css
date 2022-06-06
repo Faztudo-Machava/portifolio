@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-    @apply text-gray-700 dark:text-slate-200;
+    @apply text-gray-700 dark:text-slate-200 font-light;
 }
 
 .btn-section{
