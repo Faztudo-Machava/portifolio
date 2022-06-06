@@ -33,9 +33,9 @@ export function Cursor({classes}: CursorProps) {
     return (
         <div
             style={{ position: "fixed", top: `${y}px`, left: `${x}px` }}
-            className={`h-10 w-10 rounded-full bg-transparent border-4 opacity-50 translate-x-[-50%] translate-y-[-50%] z-[-1] flex justify-center items-center ${classes}`}
+            className={`h-10 w-10 rounded-full bg-transparent border-4 opacity-50 translate-x-[-50%] translate-y-[-50%] z-[-1] flex justify-center items-center ${classes} border-principle-300`}
         >
-            <Circle size={20} className='animate-zoom'/>
+            <Circle size={20} className='animate-zoom' color="#005DFE"/>
         </div>
     )
 }

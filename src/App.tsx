@@ -3,11 +3,12 @@ import { Nav } from './components/Nav'
 import { RoutesComp } from './components/Routes';
 import { Cursor } from './components/Cursor';
 import { useKey } from './components/keyPressed';
+import { ThemeBtn } from './components/ThemeBtn';
 
 
 
 function App() {
-  function handle(){
+  function handle() {
     alert(`arrow clicked`);
   }
 
@@ -15,8 +16,9 @@ function App() {
 
   return (
     <>
+      <ThemeBtn />
       <Nav />
-      <Cursor classes='hidden md:flex'/>
+      <Cursor classes='hidden md:flex' />
       <RoutesComp />
       <Footer />
     </>

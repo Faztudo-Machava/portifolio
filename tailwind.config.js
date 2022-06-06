@@ -1,6 +1,6 @@
 module.exports = {
-    content: ["./src/**/*.tsx"],
-    darkMode: 'media',
+    content: ["./src/**/*.tsx", "./index.html"],
+    darkMode: 'class',
     theme: {
         extend: {
             screens: {
