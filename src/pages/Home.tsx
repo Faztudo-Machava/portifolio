@@ -12,7 +12,7 @@ export function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='flex flex-col justify-center items-center h-[90vh] max-w-full'
+            className='flex flex-col justify-center items-center h-[83vh] max-w-full bg-gray-300 dark:bg-gray-800 rounded-md my-4 bg-opacity-40 dark:bg-opacity-60'
         >
             <p className=''>Oi, meu nome é</p>
             <h1 className='text-3xl md:text-4xl 2xl:text-8xl mt-4 2xl:mt-10 whitespace-nowrap'>

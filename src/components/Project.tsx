@@ -9,7 +9,7 @@ interface ProjectProps {
 export function Project({ repository, link, img, name }: ProjectProps) {
     return (
         <div className="flex flex-col bg-gray-700 rounded dark:shadow shadow-lg shadow-zinc-500 dark:shadow-zinc-900">
-            <div className="group opacity-90 dark:opacity-75 relative hover:opacity-100 transition-all">
+            <div className="group opacity-90 hover:opacity-100 dark:opacity-75 relative dark:hover:opacity-100 transition-all">
                 <img className="object-cover" src={img} alt={`imagem do ${name}`} />
                 <a 
                     target={`_blank`} 
