@@ -2,7 +2,7 @@ import { Download } from "phosphor-react";
 
 export function DownloadCV(){
     return(
-        <a href="https://drive.google.com/file/d/1LrfWnrZLdAvMElnv-ippmFfCKOQMVqOU/view?usp=sharing" target={'_blank'}
+        <a href="https://drive.google.com/file/d/1p5vKtj7GB90qT_Go_sh0d1hpVP6ZBY2Q/view?usp=sharing" target={'_blank'}
             className={`
                 border-2 
                 border-blue-500 
