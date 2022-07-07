@@ -29,6 +29,7 @@ module.exports = {
                 hover: 'hover 1.5s ease-in-out',
                 'direction-right': 'direction-right 3s ease-in-out infinite',
                 'direction-left': 'direction-left 3s ease-in-out infinite',
+                'come-right': 'direction-right 1s ease-out',
             },
             keyframes: {
                 zoom: {

@@ -1,10 +1,42 @@
-
 import { motion } from 'framer-motion';
-import { WhatsappLogo, Envelope } from 'phosphor-react';
+import { WhatsappLogo, Envelope, MessengerLogo} from 'phosphor-react';
 import { Back } from '../components/BackBtn';
-import { MessengerLogo } from 'phosphor-react';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { Loading } from '../components/Loading';
+import { Popup } from '../components/Popup';
 
 export function Contact() {
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
+  const [isEmailSent, setIsEmailSent] = useState<boolean>();
+  const [isShowingPopup, setIsShowingPopup] = useState(false)
+
+  const sendEmail = async (e: any) => {
+    e.preventDefault();
+
+    setIsSendingEmail(true);
+
+    await emailjs.sendForm('gmail', 'portifolio_email', e.target, '0TXzooXADFoWNPUOR')
+      .then((result) => {
+        if(result.status == 200) {
+          console.log(result.text)
+          setIsEmailSent(true)
+        }
+      }, (error) => {
+        setIsEmailSent(false)
+        console.log(error.text);
+      });
+
+    await e.target.reset();
+    setIsSendingEmail(false);
+    setIsShowingPopup(true);
+  };
+
+  const closePopup = function () {
+    setIsShowingPopup(false);
+  }
+
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -48,9 +80,11 @@ export function Contact() {
             </p>
           </div>
         </div>
-        <div className='w-full p-6 flex items-center'>
-          <form className='flex flex-col gap-6 w-full' action="" method="post">
-            <input className='
+        <div className='w-full p-6 flex flex-col items-center'>
+          <Popup isEmailSent={isEmailSent} show={isShowingPopup} closePopup={closePopup}/>
+          <form onSubmit={sendEmail} className='flex flex-col gap-6 w-full' action="" method="post">
+            <input
+              className='
                     w-full 
                     outline-none 
                     px-2 py-3 
@@ -60,11 +94,14 @@ export function Contact() {
                     border-gray-400 
                     dark:focus:border-principle-300
                     focus:border-blue-500 
-                    rounded' 
-                  type="text" 
-                  required
-                  placeholder='Nome' />
-            <input className='
+                    rounded'
+              type="text"
+              required
+              placeholder='Assunto'
+              name='subject'
+            />
+            <input
+              className='
                     w-full 
                     outline-none 
                     px-2 py-3 
@@ -74,11 +111,30 @@ export function Contact() {
                     border-gray-400 
                     dark:focus:border-principle-300
                     focus:border-blue-500 
-                    rounded' 
-                  type="email"
-                  required 
-                  placeholder='Email' />
-            <textarea className='
+                    rounded'
+              type="text"
+              required
+              placeholder='Nome'
+              name='name'
+            />
+            <input
+              className='
+                    w-full 
+                    outline-none 
+                    px-2 py-3 
+                    bg-transparent
+                    border-2 
+                    dark:border-gray-200
+                    border-gray-400 
+                    dark:focus:border-principle-300
+                    focus:border-blue-500 
+                    rounded'
+              type="email"
+              required
+              placeholder='Email'
+              name='email' />
+            <textarea
+              className='
                     w-full 
                     outline-none 
                     px-2 py-3 
@@ -89,11 +145,13 @@ export function Contact() {
                     dark:focus:border-principle-300
                     focus:border-blue-500 
                     rounded
-                    h-40' 
-                    required
-                    placeholder='Mensagem'></textarea>
+                    h-40'
+              required
+              placeholder='Mensagem'
+              name='message'></textarea>
             <div>
-              <input className='
+              <button
+                className='
                     px-4 
                     py-2 
                     dark:bg-blue-700
@@ -104,9 +162,12 @@ export function Contact() {
                     transition-all
                     bg-opacity-90 
                     rounded 
-                    cursor-pointer' 
-                    type="submit" 
-                    value="Enviar" />
+                    cursor-pointer'
+                disabled={isSendingEmail}
+                type="submit"
+              >
+                {isSendingEmail ? <Loading /> : 'Enviar'}
+              </button>
             </div>
           </form>
         </div>
